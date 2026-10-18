@@ -1,0 +1,571 @@
+{
+  "engine": "rules",
+  "model": null,
+  "documents": 23,
+  "slots": 276,
+  "overall": {
+    "correct": 134,
+    "wrong": 5,
+    "missed": 32,
+    "spurious": 1,
+    "correctNull": 104,
+    "precision": "95.7%",
+    "recall": "78.4%",
+    "f1": "86.2%"
+  },
+  "perField": {
+    "supplier_name": {
+      "correct": 19,
+      "wrong": 1,
+      "missed": 3,
+      "spurious": 0,
+      "correctNull": 0
+    },
+    "product_description": {
+      "correct": 15,
+      "wrong": 0,
+      "missed": 8,
+      "spurious": 0,
+      "correctNull": 0
+    },
+    "quantity_tonnes": {
+      "correct": 21,
+      "wrong": 1,
+      "missed": 1,
+      "spurious": 0,
+      "correctNull": 0
+    },
+    "declared_emissions": {
+      "correct": 20,
+      "wrong": 3,
+      "missed": 0,
+      "spurious": 0,
+      "correctNull": 0
+    },
+    "verifier_name": {
+      "correct": 7,
+      "wrong": 0,
+      "missed": 4,
+      "spurious": 1,
+      "correctNull": 11
+    },
+    "accreditation_number": {
+      "correct": 7,
+      "wrong": 0,
+      "missed": 4,
+      "spurious": 0,
+      "correctNull": 12
+    },
+    "accrediting_body": {
+      "correct": 6,
+      "wrong": 0,
+      "missed": 4,
+      "spurious": 0,
+      "correctNull": 13
+    },
+    "installation_id": {
+      "correct": 10,
+      "wrong": 0,
+      "missed": 4,
+      "spurious": 0,
+      "correctNull": 9
+    },
+    "methodology": {
+      "correct": 6,
+      "wrong": 0,
+      "missed": 2,
+      "spurious": 0,
+      "correctNull": 15
+    },
+    "direct_indirect_split": {
+      "correct": 7,
+      "wrong": 0,
+      "missed": 0,
+      "spurious": 0,
+      "correctNull": 16
+    },
+    "reporting_period": {
+      "correct": 7,
+      "wrong": 0,
+      "missed": 2,
+      "spurious": 0,
+      "correctNull": 14
+    },
+    "site_visit_date": {
+      "correct": 9,
+      "wrong": 0,
+      "missed": 0,
+      "spurious": 0,
+      "correctNull": 14
+    }
+  },
+  "perStyle": {
+    "labelled, complete": {
+      "correct": 12,
+      "wrong": 0,
+      "missed": 0,
+      "spurious": 0,
+      "correctNull": 0
+    },
+    "labelled, complete, alternative labels, kg units": {
+      "correct": 12,
+      "wrong": 0,
+      "missed": 0,
+      "spurious": 0,
+      "correctNull": 0
+    },
+    "dash-separated bullets, complete": {
+      "correct": 12,
+      "wrong": 0,
+      "missed": 0,
+      "spurious": 0,
+      "correctNull": 0
+    },
+    "internal declaration, minimal": {
+      "correct": 4,
+      "wrong": 0,
+      "missed": 0,
+      "spurious": 0,
+      "correctNull": 8
+    },
+    "partial, unverified": {
+      "correct": 7,
+      "wrong": 0,
+      "missed": 0,
+      "spurious": 0,
+      "correctNull": 5
+    },
+    "partial, verifier named but no accrediting body or site visit": {
+      "correct": 7,
+      "wrong": 0,
+      "missed": 0,
+      "spurious": 0,
+      "correctNull": 5
+    },
+    "kg unit conversion, internal": {
+      "correct": 4,
+      "wrong": 0,
+      "missed": 0,
+      "spurious": 0,
+      "correctNull": 8
+    },
+    "kg unit conversion, partial, self-declared": {
+      "correct": 8,
+      "wrong": 0,
+      "missed": 0,
+      "spurious": 0,
+      "correctNull": 4
+    },
+    "prose email, internal declaration": {
+      "correct": 2,
+      "wrong": 0,
+      "missed": 2,
+      "spurious": 0,
+      "correctNull": 8
+    },
+    "prose email, verified details in sentences": {
+      "correct": 4,
+      "wrong": 0,
+      "missed": 5,
+      "spurious": 0,
+      "correctNull": 3
+    },
+    "prose email, kg in sentence": {
+      "correct": 2,
+      "wrong": 1,
+      "missed": 3,
+      "spurious": 0,
+      "correctNull": 6
+    },
+    "pipe table": {
+      "correct": 4,
+      "wrong": 0,
+      "missed": 4,
+      "spurious": 0,
+      "correctNull": 4
+    },
+    "OCR-style typos": {
+      "correct": 3,
+      "wrong": 0,
+      "missed": 1,
+      "spurious": 0,
+      "correctNull": 8
+    },
+    "OCR-style typos, spaced colons": {
+      "correct": 4,
+      "wrong": 0,
+      "missed": 1,
+      "spurious": 0,
+      "correctNull": 7
+    },
+    "German labels, decimal comma": {
+      "correct": 1,
+      "wrong": 1,
+      "missed": 2,
+      "spurious": 0,
+      "correctNull": 8
+    },
+    "distractor numbers (ordered vs shipped, previous year)": {
+      "correct": 3,
+      "wrong": 1,
+      "missed": 0,
+      "spurious": 0,
+      "correctNull": 8
+    },
+    "verifier label present but value is \"none\"": {
+      "correct": 5,
+      "wrong": 0,
+      "missed": 0,
+      "spurious": 1,
+      "correctNull": 6
+    },
+    "data sheet with phone number and reference distractors, verifier in one line": {
+      "correct": 5,
+      "wrong": 1,
+      "missed": 3,
+      "spurious": 0,
+      "correctNull": 3
+    },
+    "unlabelled paragraph report": {
+      "correct": 3,
+      "wrong": 0,
+      "missed": 5,
+      "spurious": 0,
+      "correctNull": 4
+    },
+    "UPPERCASE labelled, complete": {
+      "correct": 12,
+      "wrong": 0,
+      "missed": 0,
+      "spurious": 0,
+      "correctNull": 0
+    },
+    "uncommon label wording": {
+      "correct": 9,
+      "wrong": 0,
+      "missed": 0,
+      "spurious": 0,
+      "correctNull": 3
+    },
+    "prose email, kg in sentence, verified": {
+      "correct": 3,
+      "wrong": 1,
+      "missed": 6,
+      "spurious": 0,
+      "correctNull": 2
+    },
+    "non-steel sector (aluminium), labelled": {
+      "correct": 8,
+      "wrong": 0,
+      "missed": 0,
+      "spurious": 0,
+      "correctNull": 4
+    }
+  },
+  "errors": [
+    {
+      "doc": "D09",
+      "style": "prose email, internal declaration",
+      "field": "supplier_name",
+      "kind": "missed",
+      "expected": "Karaganda Metallurgical JSC",
+      "predicted": null
+    },
+    {
+      "doc": "D09",
+      "style": "prose email, internal declaration",
+      "field": "product_description",
+      "kind": "missed",
+      "expected": "hot-rolled steel plate",
+      "predicted": null
+    },
+    {
+      "doc": "D10",
+      "style": "prose email, verified details in sentences",
+      "field": "product_description",
+      "kind": "missed",
+      "expected": "forged steel flanges",
+      "predicted": null
+    },
+    {
+      "doc": "D10",
+      "style": "prose email, verified details in sentences",
+      "field": "verifier_name",
+      "kind": "missed",
+      "expected": "Shanghai Green Audit Ltd",
+      "predicted": null
+    },
+    {
+      "doc": "D10",
+      "style": "prose email, verified details in sentences",
+      "field": "accreditation_number",
+      "kind": "missed",
+      "expected": "CNAS-V-5530",
+      "predicted": null
+    },
+    {
+      "doc": "D10",
+      "style": "prose email, verified details in sentences",
+      "field": "accrediting_body",
+      "kind": "missed",
+      "expected": "CNAS",
+      "predicted": null
+    },
+    {
+      "doc": "D10",
+      "style": "prose email, verified details in sentences",
+      "field": "installation_id",
+      "kind": "missed",
+      "expected": "CN-TYF-8802",
+      "predicted": null
+    },
+    {
+      "doc": "D11",
+      "style": "prose email, kg in sentence",
+      "field": "supplier_name",
+      "kind": "missed",
+      "expected": "Anatolia Coating",
+      "predicted": null
+    },
+    {
+      "doc": "D11",
+      "style": "prose email, kg in sentence",
+      "field": "product_description",
+      "kind": "missed",
+      "expected": "galvanised coil",
+      "predicted": null
+    },
+    {
+      "doc": "D11",
+      "style": "prose email, kg in sentence",
+      "field": "declared_emissions",
+      "kind": "wrong",
+      "expected": 1.64,
+      "predicted": 0.64
+    },
+    {
+      "doc": "D11",
+      "style": "prose email, kg in sentence",
+      "field": "reporting_period",
+      "kind": "missed",
+      "expected": "January to June 2026",
+      "predicted": null
+    },
+    {
+      "doc": "D12",
+      "style": "pipe table",
+      "field": "product_description",
+      "kind": "missed",
+      "expected": "Steel forgings",
+      "predicted": null
+    },
+    {
+      "doc": "D12",
+      "style": "pipe table",
+      "field": "verifier_name",
+      "kind": "missed",
+      "expected": "Mumbai Carbon Verifiers LLP",
+      "predicted": null
+    },
+    {
+      "doc": "D12",
+      "style": "pipe table",
+      "field": "accreditation_number",
+      "kind": "missed",
+      "expected": "NABCB-VB-117",
+      "predicted": null
+    },
+    {
+      "doc": "D12",
+      "style": "pipe table",
+      "field": "accrediting_body",
+      "kind": "missed",
+      "expected": "NABCB",
+      "predicted": null
+    },
+    {
+      "doc": "D13",
+      "style": "OCR-style typos",
+      "field": "product_description",
+      "kind": "missed",
+      "expected": "Welded steel tubes",
+      "predicted": null
+    },
+    {
+      "doc": "D14",
+      "style": "OCR-style typos, spaced colons",
+      "field": "installation_id",
+      "kind": "missed",
+      "expected": "CN-ZWP-3310",
+      "predicted": null
+    },
+    {
+      "doc": "D15",
+      "style": "German labels, decimal comma",
+      "field": "product_description",
+      "kind": "missed",
+      "expected": "Warmgewalzter Stahlcoil",
+      "predicted": null
+    },
+    {
+      "doc": "D15",
+      "style": "German labels, decimal comma",
+      "field": "quantity_tonnes",
+      "kind": "missed",
+      "expected": 1500,
+      "predicted": null
+    },
+    {
+      "doc": "D15",
+      "style": "German labels, decimal comma",
+      "field": "declared_emissions",
+      "kind": "wrong",
+      "expected": 1.7,
+      "predicted": 170
+    },
+    {
+      "doc": "D16",
+      "style": "distractor numbers (ordered vs shipped, previous year)",
+      "field": "quantity_tonnes",
+      "kind": "wrong",
+      "expected": 850,
+      "predicted": 900
+    },
+    {
+      "doc": "D17",
+      "style": "verifier label present but value is \"none\"",
+      "field": "verifier_name",
+      "kind": "spurious",
+      "expected": null,
+      "predicted": "None – internal declaration"
+    },
+    {
+      "doc": "D18",
+      "style": "data sheet with phone number and reference distractors, verifier in one line",
+      "field": "supplier_name",
+      "kind": "wrong",
+      "expected": "Highveld Alloy Steel (Pty) Ltd",
+      "predicted": "ref 2026/0457"
+    },
+    {
+      "doc": "D18",
+      "style": "data sheet with phone number and reference distractors, verifier in one line",
+      "field": "verifier_name",
+      "kind": "missed",
+      "expected": "Johannesburg Verification Services (Pty) Ltd",
+      "predicted": null
+    },
+    {
+      "doc": "D18",
+      "style": "data sheet with phone number and reference distractors, verifier in one line",
+      "field": "accreditation_number",
+      "kind": "missed",
+      "expected": "SANAS-V-0291",
+      "predicted": null
+    },
+    {
+      "doc": "D18",
+      "style": "data sheet with phone number and reference distractors, verifier in one line",
+      "field": "accrediting_body",
+      "kind": "missed",
+      "expected": "SANAS",
+      "predicted": null
+    },
+    {
+      "doc": "D19",
+      "style": "unlabelled paragraph report",
+      "field": "supplier_name",
+      "kind": "missed",
+      "expected": "Kharkiv Seamless Tubes JSC",
+      "predicted": null
+    },
+    {
+      "doc": "D19",
+      "style": "unlabelled paragraph report",
+      "field": "product_description",
+      "kind": "missed",
+      "expected": "seamless steel pipes",
+      "predicted": null
+    },
+    {
+      "doc": "D19",
+      "style": "unlabelled paragraph report",
+      "field": "installation_id",
+      "kind": "missed",
+      "expected": "UA-KST-0450",
+      "predicted": null
+    },
+    {
+      "doc": "D19",
+      "style": "unlabelled paragraph report",
+      "field": "methodology",
+      "kind": "missed",
+      "expected": "calculation-based approach",
+      "predicted": null
+    },
+    {
+      "doc": "D19",
+      "style": "unlabelled paragraph report",
+      "field": "reporting_period",
+      "kind": "missed",
+      "expected": "2025-10-01 to 2025-12-31",
+      "predicted": null
+    },
+    {
+      "doc": "D22",
+      "style": "prose email, kg in sentence, verified",
+      "field": "product_description",
+      "kind": "missed",
+      "expected": "hot-dip galvanised wire",
+      "predicted": null
+    },
+    {
+      "doc": "D22",
+      "style": "prose email, kg in sentence, verified",
+      "field": "declared_emissions",
+      "kind": "wrong",
+      "expected": 1.98,
+      "predicted": 0.98
+    },
+    {
+      "doc": "D22",
+      "style": "prose email, kg in sentence, verified",
+      "field": "verifier_name",
+      "kind": "missed",
+      "expected": "Carpathian Carbon Verifiers LLC",
+      "predicted": null
+    },
+    {
+      "doc": "D22",
+      "style": "prose email, kg in sentence, verified",
+      "field": "accreditation_number",
+      "kind": "missed",
+      "expected": "NAAU-VB-221",
+      "predicted": null
+    },
+    {
+      "doc": "D22",
+      "style": "prose email, kg in sentence, verified",
+      "field": "accrediting_body",
+      "kind": "missed",
+      "expected": "NAAU",
+      "predicted": null
+    },
+    {
+      "doc": "D22",
+      "style": "prose email, kg in sentence, verified",
+      "field": "installation_id",
+      "kind": "missed",
+      "expected": "UA-LWW-7745",
+      "predicted": null
+    },
+    {
+      "doc": "D22",
+      "style": "prose email, kg in sentence, verified",
+      "field": "methodology",
+      "kind": "missed",
+      "expected": "calculation-based approach following the Implementing Regulation",
+      "predicted": null
+    }
+  ]
+}
